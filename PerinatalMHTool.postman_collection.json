@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "c323f279-4f11-40a2-a09b-f7849de57c4a",
+		"name": "PerinatalMHTool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27077416"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/engine-rest/deployment/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "upload",
+							"type": "file",
+							"src": "/C:/Users/ssuss/OneDrive/Desktop/Digital_PMH_Tool/BPMN Models/PMH-tool.bpmn"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/engine-rest/deployment/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"engine-rest",
+						"deployment",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/engine-rest/process-definition/key/PerinatalMHTool/start",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/engine-rest/process-definition/key/PerinatalMHTool/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"engine-rest",
+						"process-definition",
+						"key",
+						"PerinatalMHTool",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/engine-rest/task?processDefinitionKey=PerinatalMHTool",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/engine-rest/task?processDefinitionKey=PerinatalMHTool",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"engine-rest",
+						"task"
+					],
+					"query": [
+						{
+							"key": "processDefinitionKey",
+							"value": "PerinatalMHTool"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/engine-rest/task/8483f7fb-e2c1-11ed-946a-c0b883c0a207/complete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"variables\": \r\n  { \"currentSituation\": { \"value\": \"false\"}\r\n  }\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/engine-rest/task/8483f7fb-e2c1-11ed-946a-c0b883c0a207/complete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"engine-rest",
+						"task",
+						"8483f7fb-e2c1-11ed-946a-c0b883c0a207",
+						"complete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
