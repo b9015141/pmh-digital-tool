@@ -1,0 +1,30 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "Yes",
+          "value": "true"
+        },
+        {
+          "label": "No",
+          "value": "false"
+        }
+      ],
+      "label": "Have you been referred to a Midwife?",
+      "type": "select",
+      "id": "Field_0gszbd1",
+      "key": "midwifeRefer",
+      "description": "If you have not been refered to a midwife please contact your GP as soon as possible"
+    }
+  ],
+  "type": "default",
+  "id": "midwifeRefer",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.9.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.18.0",
+  "schemaVersion": 7
+}

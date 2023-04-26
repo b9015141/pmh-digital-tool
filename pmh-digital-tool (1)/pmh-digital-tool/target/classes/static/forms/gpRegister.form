@@ -1,0 +1,18 @@
+{
+  "components": [
+    {
+      "text": "Looks like you are not registered with a GP, if so we have provided you the following links to make it easier for you.\nPlease do come back once registered. Thank you!",
+      "type": "text",
+      "id": "Field_1vbfnu1"
+    }
+  ],
+  "type": "default",
+  "id": "gpRegister",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.9.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.18.0",
+  "schemaVersion": 7
+}

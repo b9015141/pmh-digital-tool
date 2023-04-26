@@ -1,0 +1,18 @@
+{
+  "components": [
+    {
+      "text": "Looks like you have not been referred to a Midwife. Please contact your GP as soon as possible to refer you to one. ",
+      "type": "text",
+      "id": "Field_0rlzs52"
+    }
+  ],
+  "type": "default",
+  "id": "midwifeReferNeeded",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.9.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.18.0",
+  "schemaVersion": 7
+}
