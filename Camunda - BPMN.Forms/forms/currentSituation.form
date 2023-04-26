@@ -1,0 +1,37 @@
+{
+  "components": [
+    {
+      "text": "Welcome to the Perinatal Mental Health Tool",
+      "type": "text",
+      "id": "Field_1lie65x"
+    },
+    {
+      "values": [
+        {
+          "label": "Yes",
+          "value": "true"
+        },
+        {
+          "label": "No",
+          "value": "false"
+        }
+      ],
+      "label": "Are you currently pregnant?",
+      "type": "select",
+      "id": "Field_11kryho",
+      "key": "currentSituation",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "currentSituation",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.9.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.18.0",
+  "schemaVersion": 7
+}
